@@ -22,6 +22,7 @@ export const CreatePlaylistForm = () => {
       <div>
         <input {...register("data.attributes.title")} placeholder={"title"} />
       </div>
+      {/*//ToDo fix description*/}
       <div>
         <input {...register("data.attributes.description")} placeholder={"description"} />
       </div>
