@@ -9,6 +9,7 @@ export const PlaylistDescription = ({ attributes }: Props) => {
     <>
       <div>{attributes.title}</div>
       <div>{attributes.user.name}</div>
+      <div>{attributes.description}</div>
     </>
   )
 }
