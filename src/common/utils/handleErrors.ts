@@ -1,4 +1,3 @@
-import { toast } from "react-toastify"
 import { isErrorWithError } from "@/common/utils/isErrorWithError.ts"
 import { isErrorWithDetailArray } from "@/common/utils/isErrorWithDetailArray.ts"
 import { trimToMaxLength } from "@/common/utils/trimToMaxLength.ts"
@@ -12,7 +11,7 @@ export const handleErrors = (error: FetchBaseQueryError) => {
       case "PARSING_ERROR":
       case "CUSTOM_ERROR":
       case "TIMEOUT_ERROR":
-        toast(error.error)
+        errorToast(error.error)
         break
 
       case 404: // сломан endpoint

@@ -24,9 +24,9 @@ export const EditPlaylistForm = ({ playlistId, setPlaylistId, handleSubmit, edit
           type: "playlists",
         },
       },
-    }).then(() => {
-      setPlaylistId(null)
     })
+
+    setPlaylistId(null)
   }
 
   return (
